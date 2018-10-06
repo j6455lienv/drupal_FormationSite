@@ -1,0 +1,9 @@
+name: first_module
+description: 'My first custom Drupal 8 module'
+Package: Julien_Custom
+core: 8.x
+version: 8.x-1.0-alpha1
+type: module
+hidden: false
+dependencies:
+  -block

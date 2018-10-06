@@ -1,0 +1,16 @@
+first_module_page:
+  path: 'Julien_Custom/first_module'
+  pattern: 'first_module'
+  defaults:
+    _title: 'Hello first module'
+    _controller: '\Drupal\first_module\Controller\FirstModuleController::FirstModulePage'
+  requirements:
+    _permission: 'access content'
+
+first_module.form:
+  path: 'Julien_Custom/first_module/add'
+  defaults:
+    _title: 'Add a candidate'
+    _form: '\Drupal\first_module\Form\FirstForm'
+  requirements:
+    _permission: 'access content'

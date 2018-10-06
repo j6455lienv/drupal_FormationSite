@@ -1,0 +1,9 @@
+first_module_page:
+  title: Hello from first_module
+  route_name: first_module_page
+  expanded: TRUE
+
+first_module.form:
+  title: Add a candidate
+  route_name: first_module.form
+  expanded: TRUE
