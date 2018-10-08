@@ -28,7 +28,7 @@ class Language extends DrupalSqlBase {
       'domain' => $this->t('Domain to use for this language.'),
       'prefix' => $this->t('Path prefix used for this language.'),
       'weight' => $this->t('The language weight when listed.'),
-      'javascript' => $this->t('Location of the JavaScript translation file.'),
+      'javascript' => $this->t('location of the JavaScript translation file.'),
     ];
   }
 

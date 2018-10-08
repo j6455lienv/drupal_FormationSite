@@ -911,10 +911,10 @@ abstract class EntityResourceTestBase extends ResourceTestBase {
     $this->assertResourceResponse(201, FALSE, $response);
     if ($has_canonical_url) {
       $location = $this->entityStorage->load(static::$firstCreatedEntityId)->toUrl('canonical')->setAbsolute(TRUE)->toString();
-      $this->assertSame([$location], $response->getHeader('Location'));
+      $this->assertSame([$location], $response->getHeader('location'));
     }
     else {
-      $this->assertSame([], $response->getHeader('Location'));
+      $this->assertSame([], $response->getHeader('location'));
     }
     $this->assertFalse($response->hasHeader('X-Drupal-Cache'));
     // If the entity is stored, perform extra checks.
@@ -948,10 +948,10 @@ abstract class EntityResourceTestBase extends ResourceTestBase {
     $created_entity = $this->entityStorage->load(static::$secondCreatedEntityId);
     if ($has_canonical_url) {
       $location = $created_entity->toUrl('canonical')->setAbsolute(TRUE)->toString();
-      $this->assertSame([$location], $response->getHeader('Location'));
+      $this->assertSame([$location], $response->getHeader('location'));
     }
     else {
-      $this->assertSame([], $response->getHeader('Location'));
+      $this->assertSame([], $response->getHeader('location'));
     }
     $this->assertFalse($response->hasHeader('X-Drupal-Cache'));
 

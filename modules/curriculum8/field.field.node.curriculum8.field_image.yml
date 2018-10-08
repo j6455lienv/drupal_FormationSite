@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.curriculum8
+  module:
+    - image
+id: node.curriculum8.field_image
+field_name: field_image
+entity_type: node
+bundle: curriculum8
+label: Photo
+description: 'Your picture here.'
+required: true
+translatable: true
+default_value: { }
+default_value_callback: ''
+
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: 480x640
+  min_resolution: 240x320
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: true
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: { }
+field_type: image

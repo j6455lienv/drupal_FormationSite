@@ -263,7 +263,7 @@ class DbLogController extends ControllerBase {
           ['data' => $username],
         ],
         [
-          ['data' => $this->t('Location'), 'header' => TRUE],
+          ['data' => $this->t('location'), 'header' => TRUE],
           $this->l($dblog->location, $dblog->location ? Url::fromUri($dblog->location) : Url::fromRoute('<none>')),
         ],
         [

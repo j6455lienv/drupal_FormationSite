@@ -1,0 +1,10 @@
+name: Curriculum 8
+description: Curriculum Data Base created thru a new node type.
+Package: Julien_Custom
+type: module
+core: 8.x
+dependencies:
+  - node
+  - path
+  - text
+  - image

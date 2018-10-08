@@ -198,7 +198,7 @@ class SessionHttpsTest extends WebTestBase {
     $this->assertResponse($response_code);
     $location = $this->drupalGetHeader('location');
 
-    $this->assertIdentical(strpos($location, $base_url), 0, 'Location header contains expected base URL');
+    $this->assertIdentical(strpos($location, $base_url), 0, 'location header contains expected base URL');
     return substr($location, strlen($base_url));
   }
 

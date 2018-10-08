@@ -1,0 +1,11 @@
+entity.location.list:
+  title: Location: Listing
+  description: List Locations
+  route_name: entity.location.list
+  weight: 10
+
+location.admin.structure.settings:
+  title: Location Settings
+  description: Configure Location entity
+  route_name: location.settings
+  parent: system.admin_structure

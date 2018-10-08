@@ -46,9 +46,9 @@ class SimpleTestBrowserTest extends WebTestBase {
     $headers = $this->drupalGetHeaders(TRUE);
     $this->assertEqual(count($headers), 2, 'There was one intermediate request.');
     $this->assertTrue(strpos($headers[0][':status'], '303') !== FALSE, 'Intermediate response code was 303.');
-    $this->assertFalse(empty($headers[0]['location']), 'Intermediate request contained a Location header.');
+    $this->assertFalse(empty($headers[0]['location']), 'Intermediate request contained a location header.');
     $this->assertEqual($this->getUrl(), $headers[0]['location'], 'HTTP redirect was followed');
-    $this->assertFalse($this->drupalGetHeader('Location'), 'Headers from intermediate request were reset.');
+    $this->assertFalse($this->drupalGetHeader('location'), 'Headers from intermediate request were reset.');
     $this->assertResponse(200, 'Response code from intermediate request was reset.');
 
     $this->drupalLogout();

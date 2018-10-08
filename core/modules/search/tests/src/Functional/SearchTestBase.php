@@ -37,7 +37,7 @@ abstract class SearchTestBase extends BrowserTestBase {
    * Submission of a form via press submit button.
    *
    * @param string $path
-   *   Location of the form to be submitted: either a Drupal path, absolute
+   *   location of the form to be submitted: either a Drupal path, absolute
    *   path, or NULL to use the current page.
    * @param array $edit
    *   Form field data to submit. Unlike drupalPostForm(), this does not support

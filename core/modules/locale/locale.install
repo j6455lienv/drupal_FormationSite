@@ -129,7 +129,7 @@ function locale_schema() {
   ];
 
   $schema['locales_location'] = [
-    'description' => 'Location information for source strings.',
+    'description' => 'location information for source strings.',
     'fields' => [
       'lid' => [
         'type' => 'serial',

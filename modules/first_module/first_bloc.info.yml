@@ -1,0 +1,8 @@
+name: First Block
+description: My first custom Drupal 8 block
+Package: Julien_Custom
+core: 8.x
+type: module
+hidden: false
+dependencies:
+  _block

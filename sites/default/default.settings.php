@@ -227,7 +227,7 @@ $databases = [];
  */
 
 /**
- * Location of the site configuration files.
+ * location of the site configuration files.
  *
  * The $config_directories array specifies the location of file system
  * directories used for configuration data. On install, the "sync" directory is
@@ -603,7 +603,7 @@ if ($settings['hash_salt']) {
  * {config} table. To use a different storage mechanism for the active
  * configuration, do the following prior to installing:
  * - Create an "active" directory and declare its path in $config_directories
- *   as explained under the 'Location of the site configuration files' section
+ *   as explained under the 'location of the site configuration files' section
  *   above in this file. To enhance security, you can declare a path that is
  *   outside your document root.
  * - Override the 'bootstrap_config_storage' setting here. It must be set to a

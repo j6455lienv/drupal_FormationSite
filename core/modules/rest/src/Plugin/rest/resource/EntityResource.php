@@ -193,7 +193,7 @@ class EntityResource extends ResourceBase implements DependentPluginInterface {
       $headers = [];
       if (in_array('canonical', $entity->uriRelationships(), TRUE)) {
         $url = $entity->urlInfo('canonical', ['absolute' => TRUE])->toString(TRUE);
-        $headers['Location'] = $url->getGeneratedUrl();
+        $headers['location'] = $url->getGeneratedUrl();
       }
       return new ModifiedResourceResponse($entity, 201, $headers);
     }

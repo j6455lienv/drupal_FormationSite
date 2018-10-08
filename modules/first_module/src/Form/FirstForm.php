@@ -1,15 +1,13 @@
 <?php
 
-/**
- * @file
- * Contains Drupal\first_module\Form\FirstForm
- */
-
 namespace Drupal\first_module\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
+/**
+ *
+ */
 class FirstForm extends FormBase {
 
   /**
@@ -20,11 +18,13 @@ class FirstForm extends FormBase {
    *
    * @return string The unique ID ot the form defined by the class
    */
-
   public function getFormId() {
     return 'first_module_simple_form';
   }
 
+  /**
+   *
+   */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['firstname'] = [
       '#type' => 'textfield',
@@ -65,18 +65,22 @@ class FirstForm extends FormBase {
     $lastname = $form_state->getValue('lastname');
 
     drupal_set_message(t('Candidate %firstname %lastname was added.', [
-        '%firstname' => $firstname,
-        '%lastname' => $lastname,
-      ]
+      '%firstname' => $firstname,
+      '%lastname' => $lastname,
+    ]
     ));
   }
 
+  /**
+   *
+   */
   public function validateForm(array &$form, FormStateInterface $form_state) {
-//    dsm($form_state);
+    // dsm($form_state);
     $firstname = $form_state->getValue('firstname');
 
     if (strlen($firstname) < 3) {
       $form_state->setErrorByName('firstname', $this->t('The first name must be at least 3 characters long.'));
     }
   }
+
 }

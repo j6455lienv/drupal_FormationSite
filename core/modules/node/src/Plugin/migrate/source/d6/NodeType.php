@@ -99,7 +99,7 @@ class NodeType extends DrupalSqlBase {
       'comment_anonymous' => $this->t('Anonymous commenting'),
       'comment_subject_field' => $this->t('Comment subject field'),
       'comment_preview' => $this->t('Preview comment'),
-      'comment_form_location' => $this->t('Location of comment submission form'),
+      'comment_form_location' => $this->t('location of comment submission form'),
     ];
   }
 

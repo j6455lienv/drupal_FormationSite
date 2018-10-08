@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.rss
+  - field.field.node.curriculum8.body
+  - field.field.node.curriculum8.field_image
+  - image.style.medium
+  - node.type.curriculum8
+  module:
+  - image
+  - text
+  - user
+  id: node.curriculum8.rss
+  targetEntityType: node
+  bundle:  curriculum8
+  mode: rss
+
+content:
+  body:
+    type: text_default
+    weight: 1
+    label: visually_hidden
+    settings: { }
+    third_party_settings: { }
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: { }
+    type: image
+  links:
+    weight: 0
+    settings: { }
+    third_party_settings: { }
+hidden:
+  langcode: true

@@ -83,7 +83,7 @@ class CommentType extends DrupalSqlBase {
       'default_mode' => $this->t('Default comment mode.'),
       'per_page' => $this->t('Number of comments visible per page.'),
       'anonymous' => $this->t('Whether anonymous comments are allowed.'),
-      'form_location' => $this->t('Location of the comment form.'),
+      'form_location' => $this->t('location of the comment form.'),
       'preview' => $this->t('Whether previews are enabled for the comment type.'),
       'subject' => $this->t('Whether a subject field is enabled for the comment type.'),
     ];

@@ -127,7 +127,7 @@ trait UiHelperTrait {
    * It will be done as usual submit form with Mink.
    *
    * @param \Drupal\Core\Url|string $path
-   *   Location of the post form. Either a Drupal path or an absolute path or
+   *   location of the post form. Either a Drupal path or an absolute path or
    *   NULL to post to the current page. For multi-stage forms you can set the
    *   path to NULL and have it post to the last received page. Example:
    *

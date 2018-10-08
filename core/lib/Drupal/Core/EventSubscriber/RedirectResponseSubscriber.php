@@ -55,7 +55,7 @@ class RedirectResponseSubscriber implements EventSubscriberInterface {
       // new target as invalid, in which case proceed with the old target.
       $destination = $request->query->get('destination');
       if ($destination) {
-        // The 'Location' HTTP header must always be absolute.
+        // The 'location' HTTP header must always be absolute.
         $destination = $this->getDestinationAsAbsoluteUrl($destination, $request->getSchemeAndHttpHost());
         try {
           $response->setTargetUrl($destination);
@@ -107,7 +107,7 @@ class RedirectResponseSubscriber implements EventSubscriberInterface {
       // The destination query parameter can be a relative URL in the sense of
       // not including the scheme and host, but its path is expected to be
       // absolute (start with a '/'). For such a case, prepend the scheme and
-      // host, because the 'Location' header must be absolute.
+      // host, because the 'location' header must be absolute.
       if (strpos($destination, '/') === 0) {
         $destination = $scheme_and_host . $destination;
       }

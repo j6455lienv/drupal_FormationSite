@@ -520,7 +520,7 @@ abstract class RESTTestBase extends WebTestBase {
    * Loads an entity based on the location URL returned in the location header.
    *
    * @param string $location_url
-   *   The URL returned in the Location header.
+   *   The URL returned in the location header.
    *
    * @return \Drupal\Core\Entity\Entity|false
    *   The entity or FALSE if there is no matching entity.

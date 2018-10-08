@@ -881,7 +881,7 @@ abstract class WebTestBase extends TestBase {
    * It will be done as usual POST request with SimpleBrowser.
    *
    * @param \Drupal\Core\Url|string $path
-   *   Location of the post form. Either a Drupal path or an absolute path or
+   *   location of the post form. Either a Drupal path or an absolute path or
    *   NULL to post to the current page. For multi-stage forms you can set the
    *   path to NULL and have it post to the last received page. Example:
    *
@@ -1071,7 +1071,7 @@ abstract class WebTestBase extends TestBase {
    * the array of AJAX commands received.
    *
    * @param \Drupal\Core\Url|string $path
-   *   Location of the form containing the Ajax enabled element to test. Can be
+   *   location of the form containing the Ajax enabled element to test. Can be
    *   either a Drupal path or an absolute path or NULL to use the current page.
    * @param $edit
    *   Field data in an associative array. Changes the current input fields

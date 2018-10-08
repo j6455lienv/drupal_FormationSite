@@ -161,7 +161,7 @@ interface StringInterface {
    *   current page request and not loading all existing locations.
    *
    * @return array
-   *   Location ids indexed by type and name.
+   *   location ids indexed by type and name.
    */
   public function getLocations($check_only = FALSE);
 
@@ -169,10 +169,10 @@ interface StringInterface {
    * Adds a location for this string.
    *
    * @param string $type
-   *   Location type that may be any arbitrary string. Types used in Drupal
+   *   location type that may be any arbitrary string. Types used in Drupal
    *   core are: 'javascript', 'path', 'code', 'configuration'.
    * @param string $name
-   *   Location name. Drupal path in case of online discovered translations,
+   *   location name. Drupal path in case of online discovered translations,
    *   file path in case of imported strings, configuration name for strings
    *   that come from configuration, etc.
    *
@@ -184,9 +184,9 @@ interface StringInterface {
    * Checks whether the string has a given location.
    *
    * @param string $type
-   *   Location type.
+   *   location type.
    * @param string $name
-   *   Location name.
+   *   location name.
    *
    * @return bool
    *   TRUE if the string has a location with this type and name.

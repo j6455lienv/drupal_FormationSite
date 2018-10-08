@@ -44,7 +44,7 @@ tour.tip:
       label: 'Weight'
     location:
       type: string
-      label: 'Location'
+      label: 'location'
     attributes:
       type: sequence
       label: 'Attributes'

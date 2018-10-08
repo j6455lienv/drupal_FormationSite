@@ -144,7 +144,7 @@ function dblog_views_data() {
   ];
 
   $data['watchdog']['location'] = [
-    'title' => t('Location'),
+    'title' => t('location'),
     'help' => t('URL of the origin of the event.'),
     'field' => [
       'id' => 'standard',

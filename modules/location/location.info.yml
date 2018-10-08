@@ -1,0 +1,9 @@
+name: Location
+description: Entity type to manage locations.
+Package: Julien_Custom
+core: 8.x
+version: 8.x-1.0-alpha1
+type: module
+dependencies:
+  - options
+  - entity_reference

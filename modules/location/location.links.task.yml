@@ -1,0 +1,30 @@
+location.settings_tab:
+  title: Settings
+  route_name: location.settings
+  base_route: location.settings
+
+location.view:
+  title: View
+  route_name: entity.location.canonical
+  base_route: entity.location.canonical
+
+location.page_edit:
+  title: Edit
+  route_name: entity.location.edit_form
+  base_route: entity.location.canonical
+
+location.delete_confirm:
+  title: Delete
+  route_name: entity.location.delete_form
+  base_route: entity.location.canonical
+  weight: 10
+
+location.add:
+  #Which route will be called by the link
+  title: Add Location
+  route_name: entity.location.add_form
+
+  #Where will the link appear, defined by route name.
+  appears_on:
+    - entity.location.list
+    - entity.location.canonical

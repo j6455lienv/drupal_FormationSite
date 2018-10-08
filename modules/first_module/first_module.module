@@ -1,6 +1,10 @@
 <?php
 
-//function first_module_menu(){
-//  $items = "";
+/**
+ * @file
+ * Function first_module_menu(){.
+ */
+
+// $items = "";
 //  return $items;
-//}
+// }.

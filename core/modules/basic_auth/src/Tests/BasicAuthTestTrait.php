@@ -37,7 +37,7 @@ trait BasicAuthTestTrait {
    * Executes a form submission using basic authentication.
    *
    * @param string $path
-   *   Location of the post form.
+   *   location of the post form.
    * @param array $edit
    *   Field data in an associative array.
    * @param string $submit

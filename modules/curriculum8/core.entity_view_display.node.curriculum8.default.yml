@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.curriculum8.body
+    - field.field.node.curriculum8.field_image
+    - node.type.curriculum8
+  module:
+    - image
+    - text
+    - user
+id: node.curriculum8.default
+targetEntityType: node
+bundle: curriculum8
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 3
+    label: visually_hidden
+    settings: { }
+    third_party_settings: { }
+  field_image:
+    type: image
+    weight: 4
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: { }
+  links:
+    weight: 1
+    settings: { }
+    third_party_settings: { }
+hidden:
+  langcode: true

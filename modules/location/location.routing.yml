@@ -1,0 +1,57 @@
+#This file wire our pieces of code together.
+
+#Route name can be used in several place (links, redirects, local actions etc.)
+entity.location.canonical:
+  path: 'location/{location}'
+  defaults:
+    #Calls th view controller, defined in the annotation of the location entity
+    _entity_view: 'location.view'
+    _title: 'Location Content'
+  requirements:
+    #Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'location.view'
+
+entity.location.list:
+  path: 'location/list'
+  defaults:
+    #Calls the list controller, defined in the annotationof the location entity.
+    _entity_list: 'location'
+    _title: 'Location list'
+  requirements:
+    #Check for permission directly.
+    _permission: 'view location_entity'
+
+entity.location.add_form:
+  path: 'location/add'
+    defaults:
+      #Calls the form.add controller, defined in the location entity.
+      _entity_form: 'location.add'
+      _title: 'Add Location'
+    requirements:
+      _entity_create_access: 'location'
+
+entity.location.edit_form:
+  path: 'location/{location}/edit'
+    defaults:
+      #Calls the form.edit controller, defined in the location entity.
+      _entity_form: 'location.edit'
+      _title: 'Edit Location'
+    requirements:
+      _entity_access: 'location.edit'
+
+entity.location.delete_form:
+  path: 'location/{location}/delete'
+    defaults:
+      #Calls the form.delete controller, defined in the location entity.
+      _entity_form: 'location.delete'
+      _title: 'Delete Location'
+    requirements:
+      _entity_access: 'location.delete'
+
+entity.location.settings:
+  path: 'admin/structure/location_settings'
+    defaults:
+      _form: '\Drupal\location\Form\LocationSettingsForm'
+      _title: 'Location Settings'
+    requirements:
+      _permission: 'administer location entity'
